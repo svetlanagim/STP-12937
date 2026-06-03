@@ -1,0 +1,36 @@
+.hero {
+    background-image: url("../img/hero/hero-mob.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    width: 100%;
+
+}
+
+@media (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image:
+            url(../img/hero/hero-mob@2x.png);
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .hero {
+        background-image:
+            url(../img/hero/hero.png);
+        max-width: 1440px;
+
+    }
+}
+
+@media only screen and (min-width: 1440px) and (min-resolution: 192dpi),
+only screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+    .hero {
+        background-image:
+            url(../img/hero/hero@2x.png);
+    }
+}
