@@ -9,6 +9,10 @@
     padding: 8px 0 8px 10px;
 }
 
+.back-link:hover {
+    transform: scale(1.1);
+}
+
 @media only screen and (min-width: 1440px) {
     .back-link {
         border: 2.43px solid #2f2d3a;
