@@ -46,6 +46,7 @@ main {
 .burger-btn {
   border: none;
   background: transparent;
+
 }
 
 @media only screen and (min-width: 1440px) {
@@ -94,6 +95,11 @@ main {
   background: #000;
 }
 
+.btn-google:hover {
+  transform: scale(1.1);
+}
+
+/* Mobile */
 .btn-mobile {
   display: flex;
   justify-content: center;
