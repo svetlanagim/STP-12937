@@ -1,0 +1,158 @@
+.about {
+    background: #f1f7fe;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    /* padding-top: 16px; */
+}
+
+@media only screen and (min-width: 1440px) {
+    .about-container {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        column-gap: 90px;
+    }
+}
+
+.about-header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+@media only screen and (min-width: 1440px) {
+    .about-header {
+        grid-column: 1;
+        grid-row: 1;
+
+    }
+}
+
+.about-content {
+    display: flex;
+    align-items: flex-end;
+}
+
+@media only screen and (min-width: 1440px) {
+    .about-content {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
+}
+
+.about-image {
+    position: relative;
+    z-index: 2;
+    margin-right: -16px;
+}
+
+.smartphone-frame {
+    position: relative;
+    width: 177px;
+    height: 304px;
+    z-index: 1;
+}
+
+@media only screen and (min-width: 1440px) {
+    .smartphone-frame {
+        /* border-radius: 51px; */
+        width: 300px;
+        height: 508px;
+    }
+}
+
+.about-video-wrapper {
+    border: 7px solid #000;
+    border-radius: 22px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+@media only screen and (min-width: 1440px) {
+    .about-video-wrapper {
+        border: 13px solid #000;
+    }
+}
+
+.about-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.smartphone-frame::before,
+.smartphone-frame::after {
+    content: "";
+    position: absolute;
+    right: -2px;
+    border-radius: 1px;
+    width: 4px;
+    background-color: #000;
+    border-radius: 0 4px 4px 0;
+    z-index: 2;
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .smartphone-frame::before,
+    .smartphone-frame::after {
+        right: -3px;
+    }
+}
+
+.smartphone-frame::before {
+    top: 72px;
+    height: 46px;
+}
+
+@media only screen and (min-width: 1440px) {
+    .smartphone-frame::before {
+        top: 120px;
+        height: 77px;
+    }
+}
+
+.smartphone-frame::after {
+    top: 140px;
+    height: 23px;
+}
+
+@media only screen and (min-width: 1440px) {
+    .smartphone-frame::after {
+        top: 225px;
+        height: 40px;
+    }
+}
+
+.about-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.about-description p:first-child {
+    font-weight: 500;
+}
+
+
+@media only screen and (min-width: 1440px) {
+
+    .about-description {
+        grid-column: 1;
+        grid-row: 2;
+        margin-bottom: 122px;
+    }
+
+    .about-content {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
+
+
+}
