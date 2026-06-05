@@ -1,0 +1,30 @@
+.back-link {
+    display: flex;
+    align-items: center;
+    border: 2px solid #2f2d3a;
+    border-radius: 26px;
+
+    width: 60px;
+    /* height: 40px; */
+    padding: 8px 0 8px 10px;
+}
+
+@media only screen and (min-width: 1440px) {
+    .back-link {
+        border: 2.43px solid #2f2d3a;
+        border-radius: 36px;
+        width: 85px;
+        /* height: 56px; */
+        padding: 12px 0 12px 15px;
+
+    }
+}
+
+
+@media only screen and (min-width: 1440px) {
+    .back-link-icon {
+        width: 32px;
+        height: 32px;
+
+    }
+}
