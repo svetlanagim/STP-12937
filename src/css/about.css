@@ -1,0 +1,94 @@
+.about {
+    background: #f1f7fe;
+}
+
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    /* padding-top: 16px; */
+}
+
+.about-header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.about-content {
+    display: flex;
+    align-items: flex-end;
+}
+
+.about-image {
+    /* Делаем элемент позиционированным, чтобы сработал z-index */
+    position: relative;
+    z-index: 2;
+    /* Поднимаем картинку выше видео */
+
+    /* Сдвигаем правую границу картинки внутрь видео на 6px */
+    margin-right: -16px;
+}
+
+/* Новая внешняя обертка, у которой НЕТ свойства overflow: hidden */
+.smartphone-frame {
+    position: relative;
+    width: 177px;
+    height: 304px;
+    z-index: 1;
+}
+
+/* Ваш текущий контейнер теперь просто вложен внутрь и обрезает видео */
+.about-video-wrapper {
+    border: 7px solid #000;
+    border-radius: 22px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.about-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+/* Переносим кнопки на внешнюю обертку .smartphone-frame */
+.smartphone-frame::before,
+.smartphone-frame::after {
+    content: "";
+    position: absolute;
+    /* Кнопки выходят вправо за пределы черной рамки */
+    right: -2px;
+    border-radius: 1px;
+    width: 4px;
+    background-color: #000;
+    border-radius: 0 4px 4px 0;
+    z-index: 2;
+}
+
+/* Верхняя кнопка */
+.smartphone-frame::before {
+    top: 72px;
+    height: 46px;
+}
+
+/* Нижняя кнопка */
+.smartphone-frame::after {
+    top: 140px;
+    height: 23px;
+}
+
+
+.about-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.about-description p:first-child {
+    font-weight: 500;
+}
