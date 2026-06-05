@@ -88,9 +88,8 @@
     border-radius: 50%;
 } */
 
-a {
+.privacy-list-links a {
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #004bc0;
-
 }
