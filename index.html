@@ -21,12 +21,12 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/STP-12937/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/STP-12937/assets/styles-DmAcQYHb.css">
+    <link rel="stylesheet" crossorigin href="/STP-12937/assets/styles-C1OgPq4g.css">
   </head>
   <body>
     <header class="header">
-  <div>
-    <a href="/" class="header-logo">
+  <div class="container header-container">
+    <a href="index.html" class="header-logo">
       <img
         src="/STP-12937/assets/logo-mob-WIQ1C5Ps.svg"
         class="header-logo-svg"
@@ -36,6 +36,88 @@
         aria-label="Logo"
       />
     </a>
+    <button
+      class="burger-btn"
+      type="button"
+      aria-label="open menu"
+      data-menu-open
+    >
+      <svg width="40" height="40">
+        <use href="/STP-12937/assets/sprite-COInTlyK.svg#burger"></use>
+      </svg>
+    </button>
+    <div class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item"><a href="#how">How to Play</a></li>
+        <li class="nav-item"><a href="#features">Features</a></li>
+        <li class="nav-item"><a href="#faq">FAQ</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
+      </ul>
+      <a
+        class="btn-google"
+        href="https://play.google.com/store/apps/details?id=com.messworks.match3.jam&hl=en&gl=us"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg class="" width="29" height="33">
+          <use href="/STP-12937/assets/sprite-COInTlyK.svg#playstore"></use>
+        </svg>
+        <svg class="" width="99" height="40">
+          <use href="/STP-12937/assets/sprite-COInTlyK.svg#google-play"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-overlay" id="menuOverlay">
+    <div class="mobile" data-menu data-visible="close">
+      <div class="container mobile-container">
+        <div class="header-box">
+          <button
+            class="btn-close"
+            type="button"
+            aria-label="open menu"
+            data-menu-close
+          >
+            <svg class="burger-btn-icon" width="40" height="40">
+              <use href="/STP-12937/assets/sprite-COInTlyK.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <ul class="mobile-list">
+          <li class="mobile-list-item">
+            <a href="#about" data-menu-link>About</a>
+          </li>
+          <li class="mobile-list-item">
+            <a href="#how" data-menu-link>How to Play</a>
+          </li>
+          <li class="mobile-list-item">
+            <a href="#features" data-menu-link>Features</a>
+          </li>
+          <li class="mobile-list-item">
+            <a href="#faq" data-menu-link>FAQ</a>
+          </li>
+          <li class="mobile-list-item">
+            <a href="#contact" data-menu-link>Contact</a>
+          </li>
+        </ul>
+        <a
+          class="btn-google btn-mobile"
+          href="https://play.google.com/store/apps/details?id=com.messworks.match3.jam&hl=en&gl=us"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg class="" width="36" height="41">
+            <use href="/STP-12937/assets/sprite-COInTlyK.svg#playstore"></use>
+          </svg>
+          <svg class="" width="123" height="50">
+            <use href="/STP-12937/assets/sprite-COInTlyK.svg#google-play"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -48,34 +130,15 @@
   </div>
 </section>
 
-      <section class="about">
-  <div class="container"></div>
-</section>
-
-      <section class="how">
-  <div class="container">
-
-  </div>
-</section>
-
-      <section class="features">
-  <div class="container"></div>
-</section>
-
-      <section class="faq">
-  <div class="container"></div>
-</section>
-
-      <section class="contact">
-  <div class="container"></div>
-</section>
-
+      
+      
+      
+      
+      
     </main>
 
     <footer class="footer">
-  <div class="container">
-
-  </div>
+  <div class="container"></div>
 </footer>
 
 
