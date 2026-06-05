@@ -1,3 +1,34 @@
 <section class="hero">
-  <div class="container"></div>
+  <div class="container">
+    <div class="hero-wrapper">
+      <picture class="hero-image">
+        <source
+          media="(min-width: 1440px)"
+          srcset="./img/hero/logo-desc.png 1x, ./img/hero/logo-desc@2x.png 2x"
+        />
+        <source
+          media="(max-width: 1439px)"
+          srcset="./img/hero/logo-mob.png 1x, ./img/hero/logo-mob@2x.png 2x"
+        />
+        <img src="./img/hero/logo-desc.png" alt="" width="693" height="121" />
+      </picture>
+      <h1 class="hero-title">Match Faster. Blast bigger.</h1>
+      <p class="hero-text">
+        Colorful puzzle action with nonstop combo gameplay.
+      </p>
+      <a
+        class="btn-google"
+        href="https://play.google.com/store/apps/details?id=com.messworks.match3.jam&hl=en&gl=us"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg class="playstore-icon">
+          <use href="img/sprite.svg#playstore"></use>
+        </svg>
+        <svg class="google-play-icon">
+          <use href="img/sprite.svg#google-play"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
 </section>
