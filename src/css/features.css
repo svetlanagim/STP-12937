@@ -1,16 +1,15 @@
 @media only screen and (min-width: 1440px) {}
 
-
-.swiper {
-    width: 100%;
-    height: 100%;
+.features .container {
+    position: relative;
+    /* overflow: hidden; */
 }
 
-@media only screen and (min-width: 1440px) {
-    .swiper {
-        overflow: visible;
-        display: flex;
-    }
+
+.features-header,
+.features [data-swiper] {
+    position: relative;
+    z-index: 3;
 }
 
 .features-header {
@@ -26,11 +25,140 @@
     }
 }
 
+
+.features-bg-circles .circle {
+    position: absolute;
+    display: block;
+    z-index: 2;
+    pointer-events: none;
+
+}
+
+.features-bg-circles .circle img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.circle-orange,
+.circle-pink,
+.circle-pink-top {
+    display: none;
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .circle-orange,
+    .circle-pink,
+    .circle-pink-top {
+        display: block;
+    }
+}
+
+.circle-yellow {
+    width: 120px;
+    height: 120px;
+    right: 64px;
+    bottom: 86px;
+}
+
+@media only screen and (min-width: 1440px) {
+    .circle-yellow {
+        width: 110px;
+        height: 110px;
+        left: 480px;
+        top: 180px;
+        right: auto;
+        bottom: auto;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .circle-orange {
+        width: 130px;
+        height: 130px;
+        left: 420px;
+        bottom: 51px;
+    }
+}
+
+.circle-blue {
+    width: 98px;
+    height: 98px;
+    right: 1px;
+    top: 29%;
+}
+
+@media only screen and (min-width: 1440px) {
+    .circle-blue {
+        width: 200px;
+        height: 200px;
+        right: 406px;
+        bottom: 240px;
+        top: auto;
+        z-index: 4 !important;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .circle-pink {
+        width: 165px;
+        height: 165px;
+        left: 26px;
+        bottom: 238px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .circle-pink-top {
+        width: 165px;
+        height: 165px;
+        right: 45px;
+        top: 145px;
+    }
+}
+
+.circle-red {
+    width: 66px;
+    height: 66px;
+    left: 10px;
+    bottom: 12px;
+}
+
+@media only screen and (min-width: 1440px) {
+    .circle-red {
+        width: 80px;
+        height: 80px;
+        right: 26px;
+        bottom: 22px;
+        left: auto;
+        z-index: 4 !important;
+    }
+}
+
+/*  swiper */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (min-width: 1440px) {
+    .swiper {
+        overflow: visible;
+        display: flex;
+        height: auto !important;
+    }
+}
+
 .swiper-wrapper {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
     gap: 16px;
+    align-items: stretch;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -39,18 +167,22 @@
         flex-wrap: wrap;
         gap: 24px;
         transform: none !important;
-        /* align-items: stretch; */
+        align-items: stretch;
 
         /* transform: translate3d(0px, 0px, 0px) !important; */
         /* width: 100%; */
     }
 }
 
+.wrapper {
+    padding-bottom: 4px;
+}
+
 @media only screen and (max-width: 1439px) {
     .swiper-initialized .swiper-slide {
         width: 276px;
         flex-shrink: 0;
-        margin-bottom: 4px !important;
+        height: auto !important;
     }
 }
 
@@ -66,7 +198,7 @@
     background: #fff;
 
     width: 100%;
-    height: 100%;
+    height: auto;
     box-sizing: border-box;
 }
 
@@ -76,6 +208,7 @@
         margin-right: 0 !important;
         margin-bottom: 0 !important;
         padding: 24px;
+        height: auto !important;
     }
 }
 
@@ -172,5 +305,3 @@
 .card-text {
     color: #000;
 }
-
-@media only screen and (min-width: 1440px) {}

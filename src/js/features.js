@@ -15,9 +15,11 @@ const swiper = new Swiper('[data-swiper]', {
     delay: 2500,
   },
 
+  watchSlidesProgress: true,
   breakpoints: {
     1440: {
       enabled: false,
+      cleanStyles: true,
     },
   },
 });
