@@ -8,7 +8,7 @@ const swiper = new Swiper('[data-swiper]', {
   modules: [Autoplay],
 
   slidesPerView: 'auto',
-  spaceBetween: 10,
+  //   spaceBetween: 16,
   loop: true,
   speed: 2000,
   autoplay: {
