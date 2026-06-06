@@ -1,0 +1,307 @@
+@media only screen and (min-width: 1440px) {}
+
+.features .container {
+    position: relative;
+    /* overflow: hidden; */
+}
+
+
+.features-header,
+.features [data-swiper] {
+    position: relative;
+    z-index: 3;
+}
+
+.features-header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 1440px) {
+    .features-header {
+        margin-bottom: 56px;
+    }
+}
+
+
+.features-bg-circles .circle {
+    position: absolute;
+    display: block;
+    z-index: 2;
+    pointer-events: none;
+
+}
+
+.features-bg-circles .circle img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.circle-orange,
+.circle-pink,
+.circle-pink-top {
+    display: none;
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .circle-orange,
+    .circle-pink,
+    .circle-pink-top {
+        display: block;
+    }
+}
+
+.circle-yellow {
+    width: 120px;
+    height: 120px;
+    right: 64px;
+    bottom: 86px;
+}
+
+@media only screen and (min-width: 1440px) {
+    .circle-yellow {
+        width: 110px;
+        height: 110px;
+        left: 480px;
+        top: 180px;
+        right: auto;
+        bottom: auto;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .circle-orange {
+        width: 130px;
+        height: 130px;
+        left: 420px;
+        bottom: 51px;
+    }
+}
+
+.circle-blue {
+    width: 98px;
+    height: 98px;
+    right: 1px;
+    top: 29%;
+}
+
+@media only screen and (min-width: 1440px) {
+    .circle-blue {
+        width: 200px;
+        height: 200px;
+        right: 406px;
+        bottom: 240px;
+        top: auto;
+        z-index: 4 !important;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .circle-pink {
+        width: 165px;
+        height: 165px;
+        left: 26px;
+        bottom: 238px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .circle-pink-top {
+        width: 165px;
+        height: 165px;
+        right: 45px;
+        top: 145px;
+    }
+}
+
+.circle-red {
+    width: 66px;
+    height: 66px;
+    left: 10px;
+    bottom: 12px;
+}
+
+@media only screen and (min-width: 1440px) {
+    .circle-red {
+        width: 80px;
+        height: 80px;
+        right: 26px;
+        bottom: 22px;
+        left: auto;
+        z-index: 4 !important;
+    }
+}
+
+/*  swiper */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (min-width: 1440px) {
+    .swiper {
+        overflow: visible;
+        display: flex;
+        height: auto !important;
+    }
+}
+
+.swiper-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 16px;
+    align-items: stretch;
+}
+
+@media only screen and (min-width: 1440px) {
+    .swiper-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        transform: none !important;
+        align-items: stretch;
+
+        /* transform: translate3d(0px, 0px, 0px) !important; */
+        /* width: 100%; */
+    }
+}
+
+.wrapper {
+    padding-bottom: 4px;
+}
+
+@media only screen and (max-width: 1439px) {
+    .swiper-initialized .swiper-slide {
+        width: 276px;
+        flex-shrink: 0;
+        height: auto !important;
+    }
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 1px solid #e7e7e7;
+    border-radius: 24px;
+    padding: 16px;
+    box-shadow: 0 2px 4px 0 rgba(56, 18, 117, 0.2);
+    background: #fff;
+
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 1440px) {
+    .swiper-slide {
+        width: calc((100% - 48px) / 3) !important;
+        margin-right: 0 !important;
+        margin-bottom: 0 !important;
+        padding: 24px;
+        height: auto !important;
+    }
+}
+
+.card-icon {
+    border-radius: 16px;
+    width: 56px;
+    height: 56px;
+    padding: 12px;
+    margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 1440px) {
+    .card-icon {
+        width: 72px;
+        height: 72px;
+        margin-bottom: 40px;
+    }
+}
+
+.card-yellow .card-icon {
+    background: rgba(252, 211, 4, 0.08);
+}
+
+.card-blue .card-icon {
+    background: rgba(131, 197, 253, 0.08);
+}
+
+.card-green .card-icon {
+    background: rgba(42, 187, 1, 0.08);
+}
+
+.card-purple .card-icon {
+    background: rgba(228, 83, 252, 0.08);
+}
+
+.card-orange .card-icon {
+    background: rgba(253, 163, 1, 0.08);
+}
+
+.card-dark-purple .card-icon {
+    background: rgba(103, 31, 218, 0.08);
+}
+
+.card-icon-svg {
+    stroke: #fcd304;
+    fill: #fcd304;
+}
+
+@media only screen and (min-width: 1440px) {
+    .card-icon-svg {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.card-blue .card-icon-svg {
+    fill: #83c5fd;
+    stroke: #83c5fd;
+}
+
+.card-green .card-icon-svg {
+    fill: #2abb01;
+    stroke: #2abb01;
+}
+
+.card-purple .card-icon-svg {
+    fill: #e453fc;
+    stroke: #e453fc;
+}
+
+.card-orange .card-icon-svg {
+    fill: #fda301;
+    stroke: #fda301;
+}
+
+.card-dark-purple .card-icon-svg {
+    fill: #7938e1;
+    stroke: #7938e1;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 32px;
+    text-align: start;
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 1440px) {
+    .card-title {
+        font-family: "Fredoka", sans-serif;
+    }
+}
+
+.card-text {
+    color: #000;
+}
