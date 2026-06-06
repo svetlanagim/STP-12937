@@ -1,0 +1,179 @@
+.how-to-play {
+  width: 375px;
+  margin: 0 auto;
+  background-image:
+    url(../img/how/how-mob.png), url(../img/how/how-to-play-bg-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 375px, cover;
+}
+.how-to-play .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.how-to-play .item-text {
+  width: 285px;
+  padding-top: 8px;
+  padding-bottom: 24px;
+  text-align: center;
+}
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+  width: 298px;
+  padding: 14px;
+  background-color: rgba(255, 255, 255, 0.88);
+  border: 0.45px solid #e7e7e7;
+  border-radius: 16px;
+  box-shadow: 0 1px 2px 0 rgba(56, 18, 117, 0.2);
+}
+.card:nth-child(odd) {
+  align-self: flex-start;
+}
+.card:nth-child(even) {
+  align-self: flex-end;
+}
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  color: #f1f7fe;
+  border-radius: 333px;
+}
+.blue {
+  background: radial-gradient(
+    91.92% 91.92% at 35% 35%,
+    #83c5fd 0%,
+    rgba(131, 197, 253, 0.8) 50%,
+    rgba(131, 197, 253, 0.6) 100%
+  );
+  box-shadow: inset -1px -1px 4px 0 #004bc0;
+}
+.violet {
+  background: radial-gradient(
+    91.92% 91.92% at 35% 35%,
+    #7938e1 0%,
+    rgba(121, 56, 225, 0.8) 50%,
+    rgba(121, 56, 225, 0.6) 100%
+  );
+  box-shadow: inset -2px -2px 4px 0 #7938e1;
+}
+.orange {
+  background: radial-gradient(
+    91.92% 91.92% at 35% 35%,
+    #fda301 0%,
+    rgba(253, 163, 1, 0.8) 50%,
+    rgba(253, 163, 1, 0.6) 100%
+  );
+  box-shadow: inset -1px -1px 4px 0 #fd9d01;
+}
+.green {
+  background: radial-gradient(
+    91.92% 91.92% at 35% 35%,
+    #2abb01 0%,
+    rgba(42, 187, 1, 0.8) 50%,
+    rgba(42, 187, 1, 0.6) 100%
+  );
+  box-shadow: inset -1px -1px 4px 0 #2abb01;
+}
+.red {
+  box-shadow: inset -1px -1px 4px 0 #e50222;
+  background: radial-gradient(
+    91.92% 91.92% at 35% 35%,
+    #e50222 0%,
+    rgba(229, 2, 34, 0.8) 50%,
+    rgba(229, 2, 34, 0.6) 100%
+  );
+}
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.how-to-play h3 {
+  text-align: left;
+}
+.how-to-play p {
+  font-weight: 500;
+}
+
+@media (min-resolution: 192dpi) {
+  .how-to-play {
+    background-image:
+      url(../img/how/how-mob.png), url(../img/how/how-to-play-bg-mobile@2x.png);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .how-to-play {
+    width: 1296px;
+    background-image:
+      url(../img/how/how-desc.png), url(../img/how/how-to-play-bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1440px, cover;
+    border-radius: 32px;
+  }
+  .how-to-play h2 {
+    line-height: 1;
+  }
+  .how-to-play .item-text {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 56px;
+  }
+  .card-list {
+    padding: 0 28px;
+  }
+  .card {
+    flex-direction: row;
+    gap: 56px;
+    width: 737px;
+    padding: 24px 32px;
+    border: 1px solid #e7e7e7;
+    border-radius: 24px;
+    box-shadow: 0 2px 4px 0 rgba(56, 18, 117, 0.2);
+  }
+  .circle {
+    width: 72px;
+    height: 72px;
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .text-wrapper {
+    gap: 16px;
+  }
+  .how-to-play h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .how-to-play p {
+    font-weight: 600;
+  }
+}
+
+@media only screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+  .how-to-play {
+    background-image:
+      url(../img/how/how-desc@2x.png),
+      url(../img/how/how-to-play-bg-desktop@2x.png);
+  }
+}

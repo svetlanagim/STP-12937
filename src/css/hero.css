@@ -1,4 +1,6 @@
 .hero {
+  width: 375px;
+  margin: 0 auto;
   background-image: url(../img/hero/hero-fon-mob.png);
   background-repeat: no-repeat;
   background-position: top center;
@@ -31,7 +33,7 @@
   font-weight: 600;
   line-height: 1.2;
   text-align: center;
-  background-color: linear-gradient(180deg, #39024c 0%, #671fda 100%);
+  background: linear-gradient(180deg, #39024c 0%, #671fda 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -74,7 +76,8 @@
 
 @media only screen and (min-width: 1440px) {
   .hero {
-    margin: 32px 72px 50px;
+    width: 1296px;
+    margin: 32px auto 50px;
     padding: 124px 255px;
     background-image: url(../img/hero/hero-fon-desc.png);
     background-repeat: no-repeat;
@@ -119,5 +122,11 @@
   .google-play-icon {
     width: 190px;
     height: 90px;
+  }
+}
+
+@media only screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(../img/hero/hero-fon-desc@2x.png);
   }
 }
