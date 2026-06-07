@@ -7,10 +7,14 @@
     width: 60px;
     /* height: 40px; */
     padding: 8px 0 8px 10px;
+    transition: transform 200ms ease, border-color 200ms ease, background-color 200ms ease;
 }
 
 .back-link:hover {
     transform: scale(1.1);
+    border-color: #7938e1;
+    background-color: #7938e1;
+    ;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -24,6 +28,16 @@
     }
 }
 
+.back-link-icon {
+    stroke-width: 2px;
+    stroke: #2f2d3a;
+    transition: stroke 200ms ease;
+
+}
+
+.back-link:hover .back-link-icon {
+    stroke: #f1f7fe;
+}
 
 @media only screen and (min-width: 1440px) {
     .back-link-icon {
