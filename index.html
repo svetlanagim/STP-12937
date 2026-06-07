@@ -23,10 +23,10 @@
     <script type="module" crossorigin src="/STP-12937/index.js"></script>
     <link rel="modulepreload" crossorigin href="/STP-12937/assets/vendor-jXiX_PAG.js">
     <link rel="stylesheet" crossorigin href="/STP-12937/assets/vendor-CtIR5pHR.css">
-    <link rel="stylesheet" crossorigin href="/STP-12937/assets/styles-ChSN3BAN.css">
+    <link rel="stylesheet" crossorigin href="/STP-12937/assets/styles-B_nEcBr_.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header" data-scroll-header>
   <div class="container header-container">
     <a href="index.html" class="header-logo">
       <img
@@ -39,7 +39,7 @@
       />
     </a>
     <button
-      class="burger-btn"
+      class="btn burger-btn"
       type="button"
       aria-label="open menu"
       data-menu-open
@@ -50,14 +50,16 @@
     </button>
     <div class="nav">
       <ul class="nav-list">
-        <li class="nav-item"><a href="#about">About</a></li>
-        <li class="nav-item"><a href="#how">How to Play</a></li>
-        <li class="nav-item"><a href="#features">Features</a></li>
-        <li class="nav-item"><a href="#faq">FAQ</a></li>
-        <li class="nav-item"><a href="#contact">Contact</a></li>
+        <li class="nav-item"><a href="#about" data-scroll-spy>About</a></li>
+        <li class="nav-item"><a href="#how" data-scroll-spy>How to Play</a></li>
+        <li class="nav-item">
+          <a href="#features" data-scroll-spy>Features</a>
+        </li>
+        <li class="nav-item"><a href="#faq" data-scroll-spy>FAQ</a></li>
+        <li class="nav-item"><a href="#contact" data-scroll-spy>Contact</a></li>
       </ul>
       <a
-        class="btn-google"
+        class="btn btn-google"
         href="https://play.google.com/store/apps/details?id=com.messworks.match3.jam&hl=en&gl=us"
         target="_blank"
         rel="noopener noreferrer"
@@ -78,7 +80,7 @@
     <div class="mobile-container">
       <div class="header-box">
         <button
-          class="btn-close"
+          class="btn btn-close"
           type="button"
           aria-label="open menu"
           data-menu-close
@@ -90,23 +92,21 @@
       </div>
       <ul class="mobile-list">
         <li class="mobile-list-item">
-          <a href="#about" data-menu-link>About</a>
+          <a href="#about" data-scroll-spy>About</a>
         </li>
         <li class="mobile-list-item">
-          <a href="#how" data-menu-link>How to Play</a>
+          <a href="#how" data-scroll-spy>How to Play</a>
         </li>
         <li class="mobile-list-item">
-          <a href="#features" data-menu-link>Features</a>
+          <a href="#features" data-scroll-spy>Features</a>
         </li>
+        <li class="mobile-list-item"><a href="#faq" data-scroll-spy>FAQ</a></li>
         <li class="mobile-list-item">
-          <a href="#faq" data-menu-link>FAQ</a>
-        </li>
-        <li class="mobile-list-item">
-          <a href="#contact" data-menu-link>Contact</a>
+          <a href="#contact" data-scroll-spy>Contact</a>
         </li>
       </ul>
       <a
-        class="btn-google btn-mobile"
+        class="btn btn-google btn-mobile"
         href="https://play.google.com/store/apps/details?id=com.messworks.match3.jam&hl=en&gl=us"
         target="_blank"
         rel="noopener noreferrer"
@@ -144,7 +144,7 @@
         Colorful puzzle action with nonstop combo gameplay.
       </p>
       <a
-        class="btn-google"
+        class="btn btn-google"
         href="https://play.google.com/store/apps/details?id=com.messworks.match3.jam&hl=en&gl=us"
         target="_blank"
         rel="noopener noreferrer"
@@ -160,7 +160,7 @@
   </div>
 </section>
 
-      <section class="about" id="about">
+      <section class="about" id="about" data-scroll-section>
   <div class="container about-container">
     <div class="about-header">
       <h2>About the game</h2>
@@ -209,7 +209,7 @@
   </div>
 </section>
 
-      <section class="how-to-play" id="how">
+      <section class="how-to-play" id="how" data-scroll-section>
   <div class="container">
     <h2>How to Play</h2>
     <p class="item-text">Easy mechanics with explosive results.</p>
@@ -253,7 +253,7 @@
   </div>
 </section>
 
-      <section class="features" id="features">
+      <section class="features" id="features" data-scroll-section>
   <div class="container">
     <div class="features-header">
       <h2>Features</h2>
