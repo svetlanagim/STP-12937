@@ -35,14 +35,13 @@
   width: 54px;
   height: 54px;
   cursor: pointer;
-
 }
 
 .burger-btn {
   border: none;
   background: transparent;
-
 }
+
 
 @media only screen and (min-width: 1440px) {
   .burger-btn {
@@ -77,6 +76,10 @@
   paint-order: stroke fill;
 }
 
+.nav-item.active a {
+  -webkit-text-stroke: 4px rgba(131, 197, 253, 1);
+  paint-order: stroke fill;
+}
 
 .btn-google {
   display: flex;
@@ -90,10 +93,6 @@
   background: #000;
 }
 
-.btn-google:hover {
-  transform: scale(1.1);
-}
-
 /* Mobile */
 .btn-mobile {
   display: flex;
@@ -104,14 +103,12 @@
   border-radius: 10px;
   width: 201px;
   height: 67px;
-
 }
 
 .btn-close {
   border: none;
   background: transparent;
   stroke: #e7e7e7;
-  ;
 }
 
 .mobile-overlay {
@@ -138,14 +135,10 @@
   width: 67%;
   max-width: 375px;
   height: 100%;
-
   background: linear-gradient(225deg, #83c5fd 0%, #7938e1 85.48%);
-
   z-index: 999;
-
   transform: translateX(100%);
   transition: transform 300ms ease;
-
   overflow-y: auto;
 }
 
@@ -164,7 +157,6 @@
 
 .mobile-list {
   margin-bottom: 32px;
-
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -176,10 +168,16 @@
 }
 
 .mobile-list-item a {
+  display: inline-block;
   font-weight: 800;
   font-size: 24px;
   line-height: 1.2;
   color: #f2f4ff;
+  transition: transform 0.25s ease;
+}
+
+.mobile-list-item a:hover {
+  transform: scale(1.05);
 }
 
 [data-menu][data-visible='close'] {
