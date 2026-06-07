@@ -57,6 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       e.preventDefault();
 
+      window.dispatchEvent(new CustomEvent('menu:close'));
+
       setActiveNavItem(targetId);
 
       smoothScrollToElement(targetId);

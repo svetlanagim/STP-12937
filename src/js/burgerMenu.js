@@ -35,3 +35,5 @@ menu.addEventListener('click', e => {
 });
 
 overlay.addEventListener('click', closeMenu);
+
+window.addEventListener('menu:close', closeMenu);
