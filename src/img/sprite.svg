@@ -7,7 +7,7 @@
       <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.5238" d="M0.539 31.015l30.476-30.476M0.539 0.539l30.428 30.469"></path>
     </symbol>
     <symbol id="arrow" viewBox="0 0 32 32">
-      <path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" stroke="#000" d="M26 16h-20M13.5 24l-7.5-8 7.5-8"></path>
+      <path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667"  d="M26 16h-20M13.5 24l-7.5-8 7.5-8"></path>
     </symbol>
     <symbol id="atars" viewBox="0 0 32 32">
       <path fill="none" stroke-linejoin="round" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.2"  d="M11.197 12.112l3.202-10.512 3.203 10.514 9.597 3.509-9.523 3.782-3.277 10.995-3.277-10.995-9.523-3.782 9.598-3.51z"></path>

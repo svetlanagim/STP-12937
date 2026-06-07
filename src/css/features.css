@@ -1,5 +1,3 @@
-@media only screen and (min-width: 1440px) {}
-
 .features .container {
     position: relative;
     /* overflow: hidden; */
@@ -41,17 +39,17 @@
     object-fit: contain;
 }
 
-.circle-orange,
-.circle-pink,
-.circle-pink-top {
+.features-bg-circles .circle-orange,
+.features-bg-circles .circle-pink,
+.features-bg-circles .circle-pink-top {
     display: none;
 }
 
 @media only screen and (min-width: 1440px) {
 
-    .circle-orange,
-    .circle-pink,
-    .circle-pink-top {
+    .features-bg-circles .circle-orange,
+    .features-bg-circles .circle-pink,
+    .features-bg-circles .circle-pink-top {
         display: block;
     }
 }
@@ -92,29 +90,28 @@
 
 @media only screen and (min-width: 1440px) {
     .circle-blue {
-        width: 200px;
-        height: 200px;
-        right: 406px;
-        bottom: 240px;
+        width: 180px;
+        height: 180px;
+        right: 426px;
+        bottom: 270px;
         top: auto;
-        z-index: 4 !important;
     }
 }
 
 @media only screen and (min-width: 1440px) {
     .circle-pink {
-        width: 165px;
-        height: 165px;
-        left: 26px;
-        bottom: 238px;
+        width: 160px;
+        height: 160px;
+        left: 52px;
+        bottom: 250px;
     }
 }
 
 @media only screen and (min-width: 1440px) {
 
     .circle-pink-top {
-        width: 165px;
-        height: 165px;
+        width: 160px;
+        height: 160px;
         right: 45px;
         top: 145px;
     }
@@ -134,7 +131,6 @@
         right: 26px;
         bottom: 22px;
         left: auto;
-        z-index: 4 !important;
     }
 }
 

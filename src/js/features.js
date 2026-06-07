@@ -4,22 +4,38 @@ import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 
-const swiper = new Swiper('[data-swiper]', {
-  modules: [Autoplay],
+const swiperElement = document.querySelector('[data-swiper]');
 
-  slidesPerView: 'auto',
-  //   spaceBetween: 16,
-  loop: true,
-  speed: 2000,
-  autoplay: {
-    delay: 2500,
-  },
+if (swiperElement) {
+  const observer = new IntersectionObserver(
+    (entries, observerInstance) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const swiper = new Swiper(entry.target, {
+            modules: [Autoplay],
+            slidesPerView: 'auto',
+            loop: true,
+            speed: 2000,
+            autoplay: {
+              delay: 2000,
+              disableOnInteraction: false,
+            },
+            watchSlidesProgress: true,
+            breakpoints: {
+              1440: {
+                enabled: false,
+              },
+            },
+          });
 
-  watchSlidesProgress: true,
-  breakpoints: {
-    1440: {
-      enabled: false,
-      cleanStyles: true,
+          observerInstance.unobserve(entry.target);
+        }
+      });
     },
-  },
-});
+    {
+      rootMargin: '0px 0px -100px 0px',
+    }
+  );
+
+  observer.observe(swiperElement);
+}
