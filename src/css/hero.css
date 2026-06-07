@@ -63,10 +63,6 @@
   border-radius: 9px;
 }
 
-.hero .btn-google:hover {
-  transform: scale(1.1);
-}
-
 .playstore-icon {
   width: 29px;
   height: 34px;
