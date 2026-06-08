@@ -1,39 +1,47 @@
 const menu = document.querySelector('[data-menu]');
 const openBtn = document.querySelector('[data-menu-open]');
 const closeBtn = document.querySelector('[data-menu-close]');
-const menuLinks = document.querySelectorAll('[data-menu-link]');
-const overlay = document.getElementById('menuOverlay');
+const menuLinks = document.querySelectorAll('[data-scroll-spy]');
+const overlay = document.getElementById('[data-menu-overlay]');
 
 const closeMenu = () => {
-  menu.dataset.visible = 'close';
-  overlay.classList.remove('visible');
+  if (menu) menu.dataset.visible = 'close';
+  if (overlay) overlay.dataset.visible = 'close';
   document.body.style.overflow = '';
 };
 
-openBtn.addEventListener('click', () => {
-  menu.dataset.visible = 'open';
-  overlay.classList.add('visible');
-  document.body.style.overflow = 'hidden';
-});
+if (openBtn) {
+  openBtn.addEventListener('click', () => {
+    if (menu) menu.dataset.visible = 'open';
+    if (overlay) overlay.dataset.visible = 'open';
+    document.body.style.overflow = 'hidden';
+  });
+}
 
-closeBtn.addEventListener('click', closeMenu);
+if (closeBtn) {
+  closeBtn.addEventListener('click', closeMenu);
+}
 
 menuLinks.forEach(link => {
   link.addEventListener('click', closeMenu);
 });
 
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape' && menu.dataset.visible === 'open') {
+  if (e.key === 'Escape' && menu && menu.dataset.visible === 'open') {
     closeMenu();
   }
 });
 
-menu.addEventListener('click', e => {
-  if (e.target === menu) {
-    closeMenu();
-  }
-});
+if (menu) {
+  menu.addEventListener('click', e => {
+    if (e.target === menu) {
+      closeMenu();
+    }
+  });
+}
 
-overlay.addEventListener('click', closeMenu);
+if (overlay) {
+  overlay.addEventListener('click', closeMenu);
+}
 
 window.addEventListener('menu:close', closeMenu);
