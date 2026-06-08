@@ -2,6 +2,25 @@ html {
   scroll-behavior: smooth
 }
 
+#about,
+#how,
+#features,
+#faq,
+#contact {
+  scroll-margin-top: 70px;
+}
+
+@media only screen and (min-width: 1440px) {
+
+  #about,
+  #how,
+  #features,
+  #faq,
+  #contact {
+    scroll-margin-top: 78px;
+  }
+}
+
 body {
   display: flex;
   flex-direction: column;

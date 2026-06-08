@@ -76,7 +76,7 @@
   paint-order: stroke fill;
 }
 
-.nav-item.active a {
+.nav-item[data-active='true'] a {
   -webkit-text-stroke: 4px rgba(131, 197, 253, 1);
   paint-order: stroke fill;
 }
@@ -123,8 +123,12 @@
 
 }
 
-.mobile-overlay.visible {
+.mobile-overlay[data-visible='open'] {
   display: block;
+}
+
+.mobile-overlay[data-visible='close'] {
+  display: none;
 }
 
 .mobile {
