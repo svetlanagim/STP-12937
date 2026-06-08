@@ -35,8 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
       setActiveNavItem(targetId);
 
       target.scrollIntoView({ behavior: 'smooth' });
-
-      history.replaceState(null, null, href);
     });
   });
 
@@ -56,15 +54,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }, observerOptions);
 
     sections.forEach(section => observer.observe(section));
-  }
-
-  if (window.location.hash) {
-    const cleanUrl = window.location.pathname + window.location.search;
-    history.replaceState(null, null, cleanUrl);
-
-    navLinks.forEach(link => {
-      const parentLi = link.parentElement;
-      if (parentLi) parentLi.dataset.active = 'false';
-    });
   }
 });
