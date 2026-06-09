@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       e.preventDefault();
 
-      // 👉 говорим меню закрыться
       window.dispatchEvent(new Event('menu:close'));
 
       setActiveNavItem(id);
