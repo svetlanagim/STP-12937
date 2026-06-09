@@ -39,13 +39,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting && entry.target.id) {
-        setActiveNavItem(entry.target.id);
-      }
-    });
-  });
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && entry.target.id) {
+          setActiveNavItem(entry.target.id);
+        }
+      });
+    },
+    {
+      threshold: 0.4,
+      rootMargin: '-70px 0px 0px 0px',
+    }
+  );
 
   sections.forEach(section => observer.observe(section));
 });

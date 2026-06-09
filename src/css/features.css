@@ -1,6 +1,5 @@
 .features .container {
     position: relative;
-    /* overflow: hidden; */
 }
 
 
@@ -153,7 +152,6 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
-    /* gap: 16px; */
     align-items: stretch;
     transition-timing-function: linear !important;
 }
