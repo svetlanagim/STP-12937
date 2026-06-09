@@ -72,12 +72,12 @@
 }
 
 .nav-item a:hover {
-  -webkit-text-stroke: 4px rgba(131, 197, 253, 1);
+  -webkit-text-stroke: 2px rgba(131, 197, 253, 1);
   paint-order: stroke fill;
 }
 
 .nav-item[data-active='true'] a {
-  -webkit-text-stroke: 4px rgba(131, 197, 253, 1);
+  -webkit-text-stroke: 2px rgba(131, 197, 253, 1);
   paint-order: stroke fill;
 }
 
