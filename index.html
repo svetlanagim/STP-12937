@@ -7,13 +7,6 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Match 3 Jam</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
-      integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,20 +16,22 @@
     <script type="module" crossorigin src="/STP-12937/index.js"></script>
     <link rel="modulepreload" crossorigin href="/STP-12937/assets/vendor-BWeqNuc_.js">
     <link rel="stylesheet" crossorigin href="/STP-12937/assets/vendor-BWZb_DGy.css">
-    <link rel="stylesheet" crossorigin href="/STP-12937/assets/styles-IIsbaEyB.css">
+    <link rel="stylesheet" crossorigin href="/STP-12937/assets/styles-DrD1dT13.css">
   </head>
   <body>
     <header class="header">
   <div class="container header-container">
     <a href="index.html" class="header-logo">
-      <img
-        src="/STP-12937/assets/logo-mob-WIQ1C5Ps.svg"
-        class="header-logo-svg"
-        width="54"
-        height="54"
-        role="img"
-        aria-label="Logo"
-      />
+      <picture>
+        <source srcset="/STP-12937/assets/logo-D_attYvB.png 1x, /STP-12937/assets/logo@2x-BBmR4V38.png 2x" />
+        <img
+          src="/STP-12937/assets/logo-D_attYvB.png"
+          width="54"
+          height="54"
+          role="img"
+          aria-label="Logo"
+        />
+      </picture>
     </a>
     <button
       class="btn burger-btn"
@@ -178,17 +173,25 @@
           srcset="/STP-12937/assets/about-desc-C19qHkSz.png 1x, /STP-12937/assets/about-desc@2x-BN99Sfee.png 2x"
           media="(min-width: 1440px)"
         />
-        <img src="img/about/about-desc.jpg" alt="About Match 3 Jam" />
+        <img
+          src="/STP-12937/assets/about-desc-C19qHkSz.png"
+          alt="About Match 3 Jam"
+          width="283"
+          height="480"
+        />
       </picture>
       <div class="smartphone-frame">
         <div class="about-video-wrapper">
           <video
             class="about-video"
-            src="/STP-12937/assets/about-BYZcLJnB.mp4"
+            src="/STP-12937/assets/about-D0nEM8Xx.mp4"
             autoplay
             muted
             loop
             playsinline
+            preload="metadata"
+            width="272"
+            height="483"
             poster="/STP-12937/assets/about-video-C5U_e9jD.png"
           ></video>
         </div>
@@ -491,7 +494,7 @@
   </div>
 </section>
 
-      <section class="contact" id="contact">
+      <section class="contact" id="contact" data-scroll-section>
   <div class="container">
     <div class="contact-wrapper">
       <h2>Contact</h2>
@@ -513,13 +516,16 @@
     <footer class="footer">
   <div class="container footer-container">
     <a href="index.html" class="footer-logo">
-      <img
-        src="/STP-12937/assets/logo-footer-Dy8GaLiJ.svg"
-        width="86"
-        height="86"
-        role="img"
-        aria-label="Logo"
-      />
+      <picture>
+        <source srcset="/STP-12937/assets/logo-D_attYvB.png 1x, /STP-12937/assets/logo@2x-BBmR4V38.png 2x" />
+        <img
+          src="/STP-12937/assets/logo-D_attYvB.png"
+          width="86"
+          height="86"
+          role="img"
+          aria-label="Logo"
+        />
+      </picture>
     </a>
     <div class="footer-links">
       <a href="privacy.html">Privacy Policy</a>
