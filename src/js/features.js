@@ -10,7 +10,7 @@ if (swiperElement) {
   let swiperInstance = null;
 
   const initSwiper = element => {
-    if (window.innerWidth >= 1440) return;
+    if (window.innerWidth >= 1440 || swiperInstance) return;
 
     swiperInstance = new Swiper(element, {
       modules: [Autoplay],

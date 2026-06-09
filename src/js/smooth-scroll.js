@@ -1,58 +1,52 @@
-if ('history' in window) {
-  window.history.scrollRestoration = 'manual';
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
 }
 
-window.scrollTo(0, 0);
-
+window.addEventListener('load', () => {
+  window.scrollTo(0, 0);
+});
 document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('[data-scroll-spy]');
   const sections = document.querySelectorAll('[data-scroll-section]');
 
   function setActiveNavItem(sectionId) {
     navLinks.forEach(link => {
-      const parentLi = link.parentElement;
-      const href = link.getAttribute('href');
+      const li = link.parentElement;
+      const linkId = link.getAttribute('href')?.replace('#', '');
 
-      if (parentLi) {
-        parentLi.dataset.active = href === `#${sectionId}` ? 'true' : 'false';
+      if (li) {
+        li.dataset.active = linkId === sectionId ? 'true' : 'false';
       }
     });
   }
 
   navLinks.forEach(link => {
-    link.addEventListener('click', function (e) {
-      const href = this.getAttribute('href');
-      if (!href || !href.startsWith('#')) return;
+    link.addEventListener('click', e => {
+      const href = link.getAttribute('href');
+      if (!href?.startsWith('#')) return;
 
-      const targetId = href.substring(1);
-      const target = document.getElementById(targetId);
+      const id = href.slice(1);
+      const target = document.getElementById(id);
       if (!target) return;
 
       e.preventDefault();
 
-      window.dispatchEvent(new CustomEvent('menu:close'));
+      // 👉 говорим меню закрыться
+      window.dispatchEvent(new Event('menu:close'));
 
-      setActiveNavItem(targetId);
+      setActiveNavItem(id);
 
       target.scrollIntoView({ behavior: 'smooth' });
     });
   });
 
-  if (sections.length > 0) {
-    const observerOptions = {
-      root: null,
-      rootMargin: '-80px 0px -60% 0px',
-      threshold: 0,
-    };
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && entry.target.id) {
+        setActiveNavItem(entry.target.id);
+      }
+    });
+  });
 
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          setActiveNavItem(entry.target.id);
-        }
-      });
-    }, observerOptions);
-
-    sections.forEach(section => observer.observe(section));
-  }
+  sections.forEach(section => observer.observe(section));
 });
