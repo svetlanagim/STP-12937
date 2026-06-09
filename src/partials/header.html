@@ -1,14 +1,16 @@
 <header class="header">
   <div class="container header-container">
     <a href="index.html" class="header-logo">
-      <img
-        src="img/logo-mob.svg"
-        class="header-logo-svg"
-        width="54"
-        height="54"
-        role="img"
-        aria-label="Logo"
-      />
+      <picture>
+        <source srcset="img/logo.png 1x, img/logo@2x.png 2x" />
+        <img
+          src="img/logo.png"
+          width="54"
+          height="54"
+          role="img"
+          aria-label="Logo"
+        />
+      </picture>
     </a>
     <button
       class="btn burger-btn"
